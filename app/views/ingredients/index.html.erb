@@ -3,3 +3,19 @@
 <div class="container-fluid">
   <%= link_to t('links.new_ingredient'), new_ingredient_path, class: 'btn btn-primary pull-right' %>
 </div>
+
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th class="col-md-2"><%= t('table_headers.actions') %></th>
+      <th><%= t('table_headers.name') %></th>
+      <th><%= t('table_headers.calories') %></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <%= render @ingredients %>
+  </tbody>
+</table>
+
+<%= paginate @ingredients %>

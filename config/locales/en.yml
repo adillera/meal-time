@@ -31,3 +31,7 @@ en:
   placeholders:
     ingredient_name: Ingredient Name
     calories: Calories
+  table_headers:
+    actions: Actions
+    name: Name
+    calories: Calories
